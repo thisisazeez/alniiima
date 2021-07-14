@@ -1,0 +1,38 @@
+
+ hr{
+    color: white;
+    size: 40px;
+}
+header{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+body{
+background-color: teal;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+font-weight: lighter;
+
+}
+.ma{
+text-align: center;
+padding: 50px;
+margin: 50px;
+color:white;
+}
+a{
+text-decoration: none;
+background-color: white;
+color: teal;
+}
+
+.mar{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: lighter;
+}
+#b{
+    box-shadow: 4px 4px 6px white;
+}
+

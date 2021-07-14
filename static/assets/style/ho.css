@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/assets/images/h.jpg);
+    background: url("/static/assets/images/h.jpg");
+    /* background-color: red; */
+    background-size: cover;
+    flex-wrap: nowrap;
+}
+
+a{
+    background-color:transparent;
+    padding: 30px;
+    color:white;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.no{
+    margin: 70px;
+    padding: 70px;
+    text-align: center;
+    color:white;
+}
+#mar{
+    direction: up;
+text-align: center;
+
+}
+.nav{
+    flex-wrap: nowrap;
+}

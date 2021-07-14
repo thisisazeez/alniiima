@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Al-ni'ima Login</title>
+    <link rel="stylesheet" href="{%static 'static/assets/style/mbk.css'%}">
+
+</head>
+<body>
+    <header>
+        <div id="header-contents">
+            <h1>Al-Ni'ima Health Care</h1>
+            <h2>contact us at : 09075018103 </h2>
+        </div>
+    </header>
+    <div id="int">
+        <h2 id="n">Al-ni'ima is a best place <br>that we meet with doctor's 
+        <br> to solve your problems</h2>
+    </div>
+    <div class="log">
+        <form method="POST">
+            {% csrf_token %}
+        <div class="left">
+            <h1 id="h">Sign in</h1>
+            <input type="text" placeholder="Username" id="a">
+            <input type="email" placeholder="Email" id="a" required>
+            <input type="password" placeholder="Enter password" id="a"required>
+            <input type="password" placeholder="Re-enter password" id="a"required> 
+            <a href="{% url 'index' %}">Sign in</a>
+        </div>
+        </form>
+        <form method="POST">
+            {% csrf_token %}
+        <div class="rit">
+            <span class="rr">Sign up</span>
+            <input type="text" placeholder="Firts name" id="b" name="fname">
+            <input type="text" placeholder="Last name" id="b" name="lname">
+            <input type="email" placeholder="Email" id="b" name="email">
+            <input type="number" placeholder="Phone number" id="b" name="phone_number">
+            <input type="password" placeholder="password" id="b" name="password">
+            <input type="password" placeholder="password" id="b" name="password2">
+            <input type="text" placeholder="State" id="b" name="state">
+            <input type="text" placeholder="Address" id="b" name="address">
+            <a href="{% url 'card' %}">Sign up</a>
+        </div>
+        </form>
+        <div class="or">
+            OR
+        </div>
+        
+    </div>
+</body>
+</html>

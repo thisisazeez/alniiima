@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseases</title>
+    <header>
+        <center>Diseases</center>
+    </header>
+    <hr>
+    <!-- <style>
+        hr {
+            color: white;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: teal;
+            color: white;
+        }
+
+        ol {
+            list-style-type: none;
+            font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        .im {
+            display: flex;
+            justify-content: right;
+            align-content: flex-start;
+            align-items: top;
+        }
+    </style> -->
+</head>
+
+{% block content %}
+
+<div class="di">
+    <div class="dite">
+        <h1>Choose your type of diseases</h1>
+        <br>
+        <ol>
+            <a href="{% url 'malairia' %}">
+                <li>Malaria</li>
+            </a>
+            <a href="{% url 'tuberclosis' %}">
+                <li>Tuberculosis</li>
+            </a>
+            <a href="{% url 'fever' %}">
+                <li>Fever</li>
+            </a>
+            <a href="{% url 'typhoid' %}">
+                <li>Typhoid</li>
+            </a>
+            <a href="{% url 'diabetes' %}">
+                <li>Diebetes</li>
+            </a>
+            <a href="{% url 'hypertension' %}">
+                <li>Hypertension</li>
+            </a>
+            <a href="{% url 'kidney disease' %}">
+                <li>Kidney diseases</li>
+            </a>
+            <a href="{% url 'heart disease' %}">
+                <li>Heart diseases</li>
+            </a>
+            <a href="{% url 'cancer' %}">
+                <li>Cancer</li>
+            </a>
+        </ol>
+        <div class="im"><img src="{% static 'static/assets/images/2.jpg' %}"></div>
+    </div>
+</div>
+{% endblock content %}

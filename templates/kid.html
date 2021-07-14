@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidney</title>
+    <style>
+        body{
+            background-color: teal;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        hr{
+            color: white;
+        }
+        header{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        #ki{
+            border-radius: 50px;
+            box-shadow: 4px 4px 6px white;
+        }
+        #bu{
+            text-align: right;
+        }
+        a{
+            text-decoration: none;
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+     {% block content %}
+      
+    <header>Kidney disease</header>
+    <hr>
+    <div class="kid">
+        <img src="{% static 'static/assets/images/ki.jpg' %}" id="ki">
+        <h2 id="bu">
+            <button>
+                <a href="{% url 'booking' %}">See Dr sadiq mika'il for more information</a>
+            </button>
+        </h2>
+    </div>
+    <div class="ki">
+        <h2>
+            Longstanding disease of the Kidney leading to renal failure.<br>
+            The Kidney filter waste and excess fluid from the blood.As Kidney
+            fail,waste build up
+        </h2>
+    </div>  
+    {% endblock content %}
+</body>

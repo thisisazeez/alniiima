@@ -1,0 +1,132 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat new account</title>
+    <header><center>Joining Al-ni'ima health care</center></header>
+    <hr>
+    <style>
+hr{
+    color: teal;
+    width: 100%;
+    size: 20%;
+}
+input{
+    background-color: teal;
+    color: white;
+}
+body{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: teal;
+
+
+}
+.sub{
+    color: teal;
+
+}
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+ {% block content %}
+       
+ <center>   
+    <div id a><p>personal information</p></div>
+    
+ <form>
+    <div id="fr">
+    First name<br>
+    <input type="text" placeholder="first name" required>
+    <br>
+    Last name<br>
+    <input type="text" placeholder="Last name" required>
+    <br>
+    Email<br>
+    <input type="email" placeholder="email" required minlength="8" maxlength="30">
+    <br>
+    password<br>
+    <input type="password" placeholder="password" required minlength="6" maxlength="12">
+    <br>
+   Confirm password<br>
+    <input type="password" placeholder="Confirm password" required minlength="6"maxlength="12">
+    <br>Date of birth<br>
+    <input type="date" id="date" name="date" required><br>
+    Gender<br>
+    <input type="radio" name="Gender" required>Male
+    <input type="radio" name="Gender" required>feMale
+    <input type="radio" name="Gender" required>others<br>
+    Phone number<br>
+    <input type="number" placeholder="+234"  required maxlength="11" minlength="11">
+    <br>
+    State
+    <select required>
+        <option>Abia</option>
+        <option>Adamawa</option>
+        <option>Akwa ibom</option>
+        <option>Borno</option>
+        <option>Bayelsa</option>
+        <option>Benue</option>
+        <option>cross rive</option>
+        <option>Delta</option>
+        <option>Edo</option>
+        <option>Enugu</option>
+        <option>Ekiti</option>
+        <option>Kano</option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+
+    </select>
+    <br>Local govt<br>
+    <input type="text" required maxlength="50" minlength="4">
+    <br>Address <br>
+    <input type="text" required maxlength="30" minlength="4"><br>
+    <br>
+</div>
+
+<div class="sub"><a href="card.html" submit>Next</a>
+
+    </form>  
+ </center>
+  {% endblock content %}

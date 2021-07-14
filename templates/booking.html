@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="{% static 'static/style/bo.css' %}">
+
+</head>
+{% block content %}
+        {% if user.is_authenticated %}
+    <center>
+    Card Number:
+    <input type="text" id="b" placeholder="Card number"><br>
+    Your problem:
+    <br>
+    <textarea id="b" rows="20" cols="40" placeholder="write your problem here"></textarea>
+    <br>
+    <marquee direction="up">Thank you for using al-niima <br>our Dr's are replying you</marquee>
+    <br>
+    <a href="{% url 'paid' %}"><button id="c">Next</button></a>
+    
+</center>
+{% endif %}
+{% endblock content %}
+
+
+
+</body>

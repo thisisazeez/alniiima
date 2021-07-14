@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    <header><center><h1>Card information</h1></center></header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+       header {
+            background-color: teal;
+            color: white;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: right;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+            color: white;
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../i/7.jpg);
+            
+        }
+        #b{
+            border-radius: 40px;
+            color: white;
+            background: transparent;
+        }
+       
+        a{
+            text-decoration: none;
+            color: white;
+            background: teal;
+            text-align: center;
+        
+        }
+        input{
+            background-color: transparent;
+        }
+    </style>
+</head>
+ {% block content %}
+     
+    <br><br>
+    Fullname:
+    <input type="text" placeholder="fullname" id="b">
+    <input type="text" placeholder="Address" id="b">
+    Date of birth:
+    <input type="date" id="b" name="date" required><br>
+    Gender:<br>
+    <input type="radio" name="Gender" required>Male
+    <input type="radio" name="Gender" required>feMale
+    <input type="radio" name="Gender" required>others <br>
+    Local govt:
+    <input type="text" required maxlength="50" minlength="4">
+    <br>
+    <br>
+    your problem:
+    <textarea id="b" rows="20" cols="40"></textarea><br><br><br>
+    <center><a href="{% url 'paid'  %}">Next</a></center>
+    
+   {% endblock content %}

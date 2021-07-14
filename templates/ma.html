@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+    <head>
+    <h1>
+    <header><center>Malaria</center><hr></header>
+    </h1>
+    <link rel="stylesheet" href="{% static 'static/static/style/ma.css' %}">
+</head>
+ {% block content %}
+       
+    <div class="ma">
+        
+        <div class="ba"><img src="{% static 'static/assets/images/ma.jpg' %}" height="100%" id="b">
+        <div class="mar"> Malaria is disease caused by a <br>
+            plasmodium transmitted by the <br>bite
+            of infected mosquitoes See <br>
+            </div>
+            </div>
+    </div>
+<button>
+    <a href="{% url 'booking' %}">Dr Faruk abdulkarim for more information</a>
+</button>
+ {% endblock content %}
+    
