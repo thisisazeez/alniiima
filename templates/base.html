@@ -11,6 +11,51 @@
     <link rel="stylesheet" href="{% static 'static/assets/style/bootstrap.min.css' %}">
     <title>{% block title %}Alniima Hospital{% endblock title %}</title>
     <link rel="shortcut icon" href="{% static 'static/assets/images/logo.jpeg' %}">
+        <!-- <style>
+
+        /* Light Mode Button Styles
+        --------------------------- */ 
+
+        .light-mode-button {
+            background:0;
+            border: 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            height: 40px;
+            width: 100px;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0);
+        }
+
+        .light-mode-button:focus {
+            outline:none; /* Not ideal for accessibility */
+        }
+
+        .light-mode-button span:nth-child(1) {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100px;
+            height:40px;
+            border-radius: 20px;
+            background-color: #d6d7db;
+            box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+            transition: .3s;
+        }
+
+        .light-mode-button span:nth-child(2) {
+            position: absolute;
+            top:5px;
+            left:5px;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+            transition: .3s;
+        }
+
+    </style> -->
 </head>
 
 <body>
@@ -22,6 +67,8 @@
         <a href="{% url 'about' %}">About</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()"> -->
+
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -50,17 +97,31 @@
             {% endif %}
         </div>
     </nav>
-    <div class="container"> 
-         {% block content %}
+    <div class="container">
+        {% block content %}
         {% endblock content %}</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="{% static 'static/assets/style/jquery-3.3.1.slim.min.js' %}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="{% static 'static/assets/style/jquery-3.3.1.slim.min.js' %}"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="{% static 'static/assets/style/popper.min.js'%}" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAKl8WvCWPIPm49" crossorigin="anonymous">
+    <script src="{% static 'static/assets/style/popper.min.js'%}"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAKl8WvCWPIPm49" crossorigin="anonymous">
     </script>
     <script src="{% static 'static/assets/style/bootstrap.min.js' %}">
     </script>
-</body>
 
+<!-- <script>
+function toggle_light_mode() {
+    var app = document.getElementsByTagName("BODY")[0];
+    if (localStorage.lightMode == "dark") {
+	localStorage.lightMode = "light";
+	app.setAttribute("light-mode", "light");
+    } else {
+	localStorage.lightMode = "dark";
+	app.setAttribute("light-mode", "dark");
+    }		
+}
+</script> -->
+</body>
 </html>
