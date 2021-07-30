@@ -8,10 +8,10 @@ from .models import CustomUsers
 class CustomUserCreationForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = CustomUsers
-        fields = ('username', 'email', 'age', 'phone_number',) 
+        fields = ('username', 'email', 'age', 'phone_number', 'card_number',) 
         
         
 class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = CustomUsers
-        fields = ('username', 'email', 'age', 'phone_number',)
+        fields = ('username', 'email', 'age', 'phone_number', 'card_number',)

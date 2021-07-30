@@ -5,3 +5,4 @@ from django.db import models
 class CustomUsers(AbstractUser):
     age = models.PositiveIntegerField(null=True, blank=True)
     phone_number =models.IntegerField(null=True, blank=True)
+    card_number = models.CharField(max_length=20, null=True, blank=True)
