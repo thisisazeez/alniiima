@@ -10,6 +10,7 @@
     <meta name="color-scheme" content="dark light">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'static/assets/style/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'static/assets/style/ho.css' %}">
     <title>{% block title %}Alniima Hospital{% endblock title %}</title>
     <link rel="shortcut icon" href="{% static 'static/assets/images/logo.jpeg' %}">
     <!-- <style>
@@ -60,7 +61,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-md navbar-light bg-white mb-4">
         <a class="navbar-brand" href="{% url 'home' %}">Al-niima</a> |
         <a href="{% url 'disease' %}">Diseases</a> |
         <a href="{% url 'booking' %}">Booking</a> |

@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 
 {% load static %}
+<head>
 <style>
+    .body{
+        background-image: url("{% static 'static/assets/images/h.jpg' %}");
+    }
       .img{
             /* text-align: right; */
             justify-content: center;
@@ -11,18 +15,19 @@
         }
 </style>
 
-<head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Al-niima</title>
 </head>
      {% block content %}
-     
+<body>
+     <div>
     <marquee id="mar" direction="up">
     <h2>Join Al-ni'ima to <br>know your problem <br> and your solution</h2>
     </marquee>
 
 </div>
 <img class="img" src="{% static 'static/assets/images/h.jpg' %}">
-
+</body>
    {% endblock content %}
