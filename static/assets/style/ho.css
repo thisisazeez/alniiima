@@ -5,14 +5,14 @@
     
 } */
 body{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'static/assets/images/h.jpg' %}");
+    /* background-image:url("{% static 'static/assets/images/h.jpg' %}"); */
     /* background: url("/static/assets/images/h.jpg"); */
     /* background-color: red; */
     background-size: cover;
     /* flex-wrap: nowrap; */
 }
        body{
-            background-color: teal;
+            /* background-color: teal; */
             color: white;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -33,9 +33,4 @@ body{
 #mar{
     direction: up;
 text-align: left;
-
-
-/* }
-.nav{
-    flex-wrap: nowrap;
-} */
+}
