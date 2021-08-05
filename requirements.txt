@@ -3,3 +3,5 @@ django_crispy_forms
 gunicorn
 django-heroku
 whitenoise
+pycopy-fcntl 0.0.4
+ micropython-fcntl
