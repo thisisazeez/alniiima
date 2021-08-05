@@ -2,3 +2,4 @@ django
 django_crispy_forms
 gunicorn
 django-heroku
+whitenoise
