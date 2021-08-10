@@ -1,1 +1,1 @@
-web: gunicorn alniima.wsgi $PORT
+web: gunicorn alniima.wsgi --log-file -
